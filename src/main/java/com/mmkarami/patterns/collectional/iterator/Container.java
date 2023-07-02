@@ -1,4 +1,4 @@
-package com.mmkaram.patterns.collectional.iterator;
+package com.mmkarami.patterns.collectional.iterator;
 
 public interface Container<E> {
 

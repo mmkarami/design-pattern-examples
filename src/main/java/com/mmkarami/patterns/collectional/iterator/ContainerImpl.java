@@ -1,4 +1,4 @@
-package com.mmkaram.patterns.collectional.iterator;
+package com.mmkarami.patterns.collectional.iterator;
 
 import java.util.Arrays;
 import java.util.ConcurrentModificationException;
@@ -8,7 +8,7 @@ public class ContainerImpl<E> implements Container<E> {
 
 	private static final int DEFAULT_CAPACITY = 10;
 
-	int size;
+	private int size;
 
 	private Object[] elementData;
 
@@ -38,6 +38,7 @@ public class ContainerImpl<E> implements Container<E> {
 		if (size == elementData.length)
 			elementData = grow();
 		elementData[size] = element;
+		size = size + 1;
 	}
 
 	private Object[] grow() {
@@ -61,5 +62,9 @@ public class ContainerImpl<E> implements Container<E> {
 			cursor = cursor + 1;
 			return (E) elementData[cursor];
 		}
+	}
+
+	public Integer size() {
+		return size;
 	}
 }
