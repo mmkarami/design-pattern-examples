@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import com.mmkarami.patterns.collectional.iterator.ContainerImpl;
-
 public class ContainerImplTest {
 
 	@Test
@@ -65,5 +63,7 @@ public class ContainerImplTest {
 		//Assert
 		assertEquals(11, container.size(), "Expecting 11.");
 	}
+	
+	
 	
 }
