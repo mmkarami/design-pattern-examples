@@ -55,7 +55,7 @@ public class ContainerImpl<E> implements Container<E> {
 
 		@SuppressWarnings("unchecked")
 		public E next() {
-			if (cursor >= size)
+			if (cursor >= getSize())
 				throw new NoSuchElementException();
 			if (cursor >= ContainerImpl.this.elementData.length)
 				throw new ConcurrentModificationException();
