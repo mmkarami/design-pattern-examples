@@ -63,7 +63,4 @@ public class ContainerImplTest {
 		//Assert
 		assertEquals(11, container.size(), "Expecting 11.");
 	}
-	
-	
-	
 }
