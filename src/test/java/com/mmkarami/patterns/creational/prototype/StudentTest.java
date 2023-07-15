@@ -13,7 +13,7 @@ public class StudentTest {
 	@Test
 	public void testShallowClone_whenGetClone_thenObjectsMustBeDifferent() {
 		// Arrange
-		Student student = new Student("Daryoush", new GregorianCalendar(1386, Calendar.MAY, 25).getTime());
+		Student student = new Student("Daryoush", new Address("Home", "Tehran, Jordan"));
 
 		// Act
 		Student clonedStudent = student.clone();
@@ -23,16 +23,27 @@ public class StudentTest {
 	}
 
 	@Test
+	public void testDeepClone_whenGetClone_thenInnerObjectsMustBeDifferent() {
+		// Arrange
+		Student student = new Student("Daryoush", new Address("Home", "Tehran, Jordan"));
+
+		// Act
+		Student clonedStudent = student.clone();
+
+		// Assert
+		assertNotEquals(student.getAddress(), clonedStudent.getAddress(), "Expecting not equal.");
+	}
+
+	@Test
 	public void testEquality_whenGetClone_thenObjectsInstanceVariablesShouldBeSame() {
 		// Arrange
-		Student student = new Student("Daryoush", new GregorianCalendar(1386, Calendar.MAY, 25).getTime());
+		Student student = new Student("Daryoush", new Address("Home", "Tehran, Jordan"));
 
 		// Act
 		Student clonedStudent = student.clone();
 
 		// Assert
 		assertEquals("Daryoush", clonedStudent.getName(), "Expecting equality.");
-		assertEquals(clonedStudent.getBirthday(), new GregorianCalendar(1386, Calendar.MAY, 25).getTime(),
-				"Expecting equality.");
+		assertEquals("Home", clonedStudent.getAddress().getName(), "Expecting equality.");
 	}
 }

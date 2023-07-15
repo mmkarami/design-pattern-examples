@@ -6,12 +6,12 @@ public class Student implements Cloneable {
 
 	private String name;
 
-	private Date birthday;
+	private Address address;
 
-	public Student(String name, Date birthday) {
+	public Student(String name, Address address) {
 		super();
 		this.name = name;
-		this.birthday = birthday;
+		this.address = address;
 	}
 
 	public String getName() {
@@ -22,18 +22,18 @@ public class Student implements Cloneable {
 		this.name = name;
 	}
 
-	public Date getBirthday() {
-		return birthday;
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
+	public Address getAddress() {
+		return address;
 	}
 
 	public Student clone() {
 		try {
 			Student clonedStudent = (Student) super.clone();
-			clonedStudent.setBirthday((Date) birthday.clone());
+			clonedStudent.setAddress(clonedStudent.getAddress().clone());
 			return clonedStudent;
 		} catch (CloneNotSupportedException e) {
 			throw new RuntimeException();
