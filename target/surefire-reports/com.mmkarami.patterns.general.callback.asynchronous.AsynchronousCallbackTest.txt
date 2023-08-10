@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.mmkarami.patterns.general.callback.asynchronous.AsynchronousCallbackTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.031 s - in com.mmkarami.patterns.general.callback.asynchronous.AsynchronousCallbackTest

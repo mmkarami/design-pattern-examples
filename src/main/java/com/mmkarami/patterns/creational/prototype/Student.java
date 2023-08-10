@@ -1,7 +1,5 @@
 package com.mmkarami.patterns.creational.prototype;
 
-import java.util.Date;
-
 public class Student implements Cloneable {
 
 	private String name;
