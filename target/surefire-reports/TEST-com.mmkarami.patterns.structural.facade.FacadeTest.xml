@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mmkarami.patterns.creational.prototype.PrototypeTest" time="0.005" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mmkarami.patterns.structural.facade.FacadeTest" time="0.006" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="D:\dev\javaStack\github\core-java\design-pattern-examples\target\test-classes;D:\dev\javaStack\github\core-java\design-pattern-examples\target\classes;C:\Users\mohammadmehdik\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\mohammadmehdik\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\mohammadmehdik\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\mohammadmehdik\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mohammadmehdik\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\mohammadmehdik\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -58,6 +59,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="testEquality_whenGetClone_thenObjectsInstanceVariablesShouldBeSame" classname="com.mmkarami.patterns.creational.prototype.PrototypeTest" time="0.002"/>
-  <testcase name="testClone_whenGetClone_thenObjectsMustBeDifferent" classname="com.mmkarami.patterns.creational.prototype.PrototypeTest" time="0.002"/>
+  <testcase name="testChangeMode_whenChangeToSportMode_thenItMustBeDriveFast" classname="com.mmkarami.patterns.structural.facade.FacadeTest" time="0.004"/>
+  <testcase name="testChangeMode_whenChangeToSnowMode_thenItMustBeDriveCarefully" classname="com.mmkarami.patterns.structural.facade.FacadeTest" time="0"/>
 </testsuite>
